@@ -3,36 +3,44 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 :root {
   --black-color: #080808;
   --orange-color: #e58d41;
 }
+
 @font-face {
   font-family: Poppins-Regular;
   src: url(fonts/Poppins-Regular.woff2);
 }
+
 @font-face {
   font-family: robotoBold;
   src: url(fonts/Roboto-Bold.ttf);
 }
+
 @font-face {
   font-family: robotoMedium;
   src: url(fonts/Roboto-Medium.ttf);
 }
+
 @font-face {
   font-family: robotoRegular;
   src: url(fonts/Roboto-Regular.ttf);
 }
+
 body {
   color: var(--black-color);
   font-family: "Poppins-Regular";
 }
+
 h1 {
   position: relative;
   margin: 25px 0;
   font-family: "Poppins-Regular";
   font-size: 2em;
 }
+
 h1::before {
   content: "";
   position: absolute;
@@ -50,11 +58,13 @@ h1::before {
   height: 2px;
   background: var(--orange-color);
 }
+
 .container {
   max-width: 1250px;
   margin: 20px auto;
   padding: 0 2%;
 }
+
 header {
   display: flex;
   align-items: center;
@@ -63,17 +73,20 @@ header {
   width: 100%;
 }
 
-#home{
+#home {
   margin: 20px auto;
   /* padding: 0 2%;  */
 }
+
 .logo {
   width: 150px;
   margin: 10px 0 20px 0;
 }
+
 .logo img {
   width: 100%;
 }
+
 input[type="checkbox"] {
   appearance: none;
   position: relative;
@@ -82,6 +95,7 @@ input[type="checkbox"] {
   cursor: pointer;
   display: none;
 }
+
 input[type="checkbox"]::before {
   content: "";
   background: url("img/nav-button-icon.png") no-repeat center center/cover;
@@ -89,6 +103,7 @@ input[type="checkbox"]::before {
   width: 100%;
   height: 100%;
 }
+
 nav {
   width: 100%;
   text-align: center;
@@ -97,12 +112,14 @@ nav {
   border-right: 0;
   padding: 10px 0;
 }
+
 nav a {
   text-decoration: none;
   color: var(--black-color);
   margin: 0 20px;
   font-family: "Poppins-Regular";
 }
+
 nav a:hover {
   color: var(--orange-color);
 }
@@ -111,6 +128,7 @@ nav a:hover {
 main {
   text-align: center;
 }
+
 .main_imgcontainer {
   width: 100%;
   margin: 15px 0;
@@ -119,15 +137,18 @@ main {
 .main_imgcontainer img {
   width: 100%;
 }
+
 .main_intro {
   padding: 10px 50px;
   text-align: justify;
 }
+
 .main_intro img {
   margin: 0 20px 20px 20px;
   width: 350px;
   float: right;
 }
+
 .btn {
   margin-top: 20px;
   padding: 10px 25px;
@@ -145,16 +166,29 @@ main {
 .img_section h1 {
   margin: 40px 0;
 }
+
 .images {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 0 50px;
+  padding: 0 50px; 
+
 }
-.images img {
+.hover-image{
+  overflow: hidden;
   width: 28%;
   border-radius: 50%;
+}
+
+
+.images img {
+  width: 100%;
+  border-radius: 50%;
+  
+}
+.hover-image img:hover{
+  transition: 0.5ms all ease-in-out;
+  transform: scale(1.5);
 }
 
 /* history section */
@@ -162,10 +196,12 @@ main {
   text-align: center;
   padding: 20px 2%;
 }
+
 .history .text {
   text-align: justify;
   padding-top: 20px;
 }
+
 /* footer */
 .footer_line {
   margin-top: 40px;
@@ -173,11 +209,13 @@ main {
   height: 2px;
   background: var(--black-color);
 }
+
 .footer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
 .footer_text span {
   color: var(--orange-color);
 }
@@ -200,30 +238,38 @@ main {
     z-index: 20;
     transition: transform 0.4s;
   }
+
   nav a {
     margin: 10px 20px;
   }
+
   header {
     flex-direction: row;
     align-items: flex-end;
     justify-content: space-between;
   }
+
   .logo {
     margin: 0;
   }
+
   input[type="checkbox"] {
     display: block;
   }
+
   input[type="checkbox"]:checked ~ nav {
     transform: translate(0);
   }
+
   .main_intro {
     padding: 10px 0;
   }
+
   .main_intro img {
     margin: 0 0 20px 20px;
     width: 250px;
   }
+
   .images {
     width: 100%;
     padding: 0;
@@ -241,6 +287,7 @@ main {
   .images {
     justify-content: center;
   }
+
   .images img {
     width: 46%;
     margin: 10px 5px;
