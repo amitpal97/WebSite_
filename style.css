@@ -60,6 +60,12 @@ header {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  width: 100%;
+}
+
+#home{
+  margin: 20px auto;
+  /* padding: 0 2%;  */
 }
 .logo {
   width: 150px;
