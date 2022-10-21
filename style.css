@@ -14,21 +14,6 @@
   src: url(fonts/Poppins-Regular.woff2);
 }
 
-@font-face {
-  font-family: robotoBold;
-  src: url(fonts/Roboto-Bold.ttf);
-}
-
-@font-face {
-  font-family: robotoMedium;
-  src: url(fonts/Roboto-Medium.ttf);
-}
-
-@font-face {
-  font-family: robotoRegular;
-  src: url(fonts/Roboto-Regular.ttf);
-}
-
 body {
   color: var(--black-color);
   font-family: "Poppins-Regular";
@@ -133,14 +118,14 @@ main {
   width: 100%;
   margin: 15px 0;
 }
-.main_imgcontainer img:hover{
-opacity: 0.7;
+
+.main_imgcontainer img:hover {
+  opacity: 0.7;
 }
 
 .main_imgcontainer img {
   width: 100%;
 }
-
 
 .main_intro {
   padding: 10px 50px;
@@ -152,7 +137,8 @@ opacity: 0.7;
   width: 350px;
   float: right;
 }
-.main_intro img:hover{
+
+.main_intro img:hover {
   opacity: 0.2;
 }
 
@@ -178,22 +164,21 @@ opacity: 0.7;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 0 50px; 
-
+  padding: 0 50px;
 }
-.hover-image{
+
+.hover-image {
   overflow: hidden;
   width: 28%;
   border-radius: 50%;
 }
 
-
 .images img {
   width: 100%;
   border-radius: 50%;
-  
 }
-.hover-image img:hover{
+
+.hover-image img:hover {
   transition: 0.5ms all ease-in-out;
   transform: scale(1.5);
 }
