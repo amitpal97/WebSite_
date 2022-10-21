@@ -8,6 +8,10 @@
   --orange-color: #e58d41;
 }
 @font-face {
+  font-family: Poppins-Regular;
+  src: url(fonts/Poppins-Regular.woff2);
+}
+@font-face {
   font-family: robotoBold;
   src: url(fonts/Roboto-Bold.ttf);
 }
@@ -21,12 +25,12 @@
 }
 body {
   color: var(--black-color);
-  font-family: "robotoRegular";
+  font-family: "Poppins-Regular";
 }
 h1 {
   position: relative;
   margin: 25px 0;
-  font-family: "robotoRegular";
+  font-family: "Poppins-Regular";
   font-size: 2em;
 }
 h1::before {
@@ -91,7 +95,7 @@ nav a {
   text-decoration: none;
   color: var(--black-color);
   margin: 0 20px;
-  font-family: "robotoBold";
+  font-family: "Poppins-Regular";
 }
 nav a:hover {
   color: var(--orange-color);
